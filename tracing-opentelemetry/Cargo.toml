@@ -28,6 +28,10 @@ tracing = { path = "../tracing", version = "0.1", default-features = false, feat
 tracing-core = { path = "../tracing-core", version = "0.1" }
 tracing-subscriber = { path = "../tracing-subscriber", version = "0.3", default-features = false, features = ["registry", "std"] }
 tracing-log = { path = "../tracing-log", version = "0.1", default-features = false, optional = true }
+instant = "0.1.12"
+
+[target.wasm32-unknown-unknown.dependencies]
+js-sys = "0.3.56"
 
 [dev-dependencies]
 async-trait = "0.1"
