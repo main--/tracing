@@ -24,10 +24,10 @@ default = ["tracing-log"]
 
 [dependencies]
 opentelemetry = { version = "0.17", default-features = false, features = ["trace"] }
-tracing = { path = "../tracing", version = "0.1", default-features = false, features = ["std"] }
-tracing-core = { path = "../tracing-core", version = "0.1" }
-tracing-subscriber = { path = "../tracing-subscriber", version = "0.3", default-features = false, features = ["registry", "std"] }
-tracing-log = { path = "../tracing-log", version = "0.1", default-features = false, optional = true }
+tracing = { version = "0.1", default-features = false, features = ["std"] }
+tracing-core = { version = "0.1" }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["registry", "std"] }
+tracing-log = { version = "0.1", default-features = false, optional = true }
 instant = "0.1.12"
 
 [target.wasm32-unknown-unknown.dependencies]
